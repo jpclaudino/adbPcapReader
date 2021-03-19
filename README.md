@@ -29,10 +29,10 @@ The sessions file contains information about file upload/download sessions (adb 
 The messages file contains all low-level messages sent, such as OPEN, CLSE, WRTE, AUTH, among others.
 Two directories are also created. There, all files sent/received via adb push and pull are reassembled.
 
-![output](https://github.com/jpclaudino/adbPcapReader/output.PNG)
+![output](https://github.com/jpclaudino/adbPcapReader/blob/main/output.PNG)
 
-> Messages.txt
-1.64 -> host: CNXN (Arg 0: 16777216, Arg 1: 262144, Lenght: 7)
+Messages.txt
+> 1.64 -> host: CNXN (Arg 0: 16777216, Arg 1: 262144, Lenght: 7)
 1.64 -> host: AUTH (Arg 0: 1, Arg 1: 0, Lenght: 20)
 1.64 -> host: AUTH (Arg 0: 2, Arg 1: 0, Lenght: 256)
 1.64 -> host: AUTH (Arg 0: 1, Arg 1: 0, Lenght: 20)
@@ -46,8 +46,9 @@ Two directories are also created. There, all files sent/received via adb push an
 1.64 -> host: OKAY (Arg 0: 1044538744, Arg 1: 1, Lenght: 0)
 1.64 -> host: CLSE (Arg 0: 1, Arg 1: 1044538744, Lenght: 0)
 
-> Sessions.txt
-*************************** SESSION BEGIN ***************************
+
+Sessions.txt
+> *************************** SESSION BEGIN ***************************
 1.64 -> host: OPEN (Arg 0: 77, Arg 1: 0, Lenght: 39)
 Payload: shell:getprop ro.build.version.release
 6.0
@@ -57,3 +58,4 @@ Payload: shell:getprop ro.build.version.release
 Payload: sync:
  adb push /data/local/tmp/file ***** File Transmission *****
 *************************** SESSION END ***************************
+
