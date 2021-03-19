@@ -33,29 +33,29 @@ Two directories are also created. There, all files sent/received via adb push an
 
 Messages.txt
 > 1.64 -> host: CNXN (Arg 0: 16777216, Arg 1: 262144, Lenght: 7)
-1.64 -> host: AUTH (Arg 0: 1, Arg 1: 0, Lenght: 20)
-1.64 -> host: AUTH (Arg 0: 2, Arg 1: 0, Lenght: 256)
-1.64 -> host: AUTH (Arg 0: 1, Arg 1: 0, Lenght: 20)
-1.64 -> host: AUTH (Arg 0: 2, Arg 1: 0, Lenght: 256)
-1.64 -> host: AUTH (Arg 0: 1, Arg 1: 0, Lenght: 20)
-1.64 -> host: AUTH (Arg 0: 3, Arg 1: 0, Lenght: 717)
-1.64 -> host: CNXN (Arg 0: 16777216, Arg 1: 4096, Lenght: 96)
-1.64 -> host: OPEN (Arg 0: 1044538744, Arg 1: 0, Lenght: 39)
-1.64 -> host: OKAY (Arg 0: 1, Arg 1: 1044538744, Lenght: 0)
-1.64 -> host: WRTE (Arg 0: 1, Arg 1: 1044538744, Lenght: 5)
-1.64 -> host: OKAY (Arg 0: 1044538744, Arg 1: 1, Lenght: 0)
-1.64 -> host: CLSE (Arg 0: 1, Arg 1: 1044538744, Lenght: 0)
+  1.64 -> host: AUTH (Arg 0: 1, Arg 1: 0, Lenght: 20)
+  1.64 -> host: AUTH (Arg 0: 2, Arg 1: 0, Lenght: 256)
+  1.64 -> host: AUTH (Arg 0: 1, Arg 1: 0, Lenght: 20)
+  1.64 -> host: AUTH (Arg 0: 2, Arg 1: 0, Lenght: 256)
+  1.64 -> host: AUTH (Arg 0: 1, Arg 1: 0, Lenght: 20)
+  1.64 -> host: AUTH (Arg 0: 3, Arg 1: 0, Lenght: 717)
+  1.64 -> host: CNXN (Arg 0: 16777216, Arg 1: 4096, Lenght: 96)
+  1.64 -> host: OPEN (Arg 0: 1044538744, Arg 1: 0, Lenght: 39)
+  1.64 -> host: OKAY (Arg 0: 1, Arg 1: 1044538744, Lenght: 0)
+  1.64 -> host: WRTE (Arg 0: 1, Arg 1: 1044538744, Lenght: 5)
+  1.64 -> host: OKAY (Arg 0: 1044538744, Arg 1: 1, Lenght: 0)
+  1.64 -> host: CLSE (Arg 0: 1, Arg 1: 1044538744, Lenght: 0)
 
 
 Sessions.txt
 > *************************** SESSION BEGIN ***************************
-1.64 -> host: OPEN (Arg 0: 77, Arg 1: 0, Lenght: 39)
-Payload: shell:getprop ro.build.version.release
-6.0
-*************************** SESSION END ***************************
-*************************** SESSION BEGIN ***************************
-1.56 -> host: OPEN (Arg 0: 88, Arg 5: 0, Lenght: 6)
-Payload: sync:
- adb push /data/local/tmp/file ***** File Transmission *****
-*************************** SESSION END ***************************
+  1.64 -> host: OPEN (Arg 0: 77, Arg 1: 0, Lenght: 39)
+  Payload: shell:getprop ro.build.version.release
+  6.0
+  *************************** SESSION END ***************************
+  *************************** SESSION BEGIN ***************************
+  1.56 -> host: OPEN (Arg 0: 88, Arg 5: 0, Lenght: 6)
+  Payload: sync:
+   adb push /data/local/tmp/file ***** File Transmission *****
+  *************************** SESSION END ***************************
 
