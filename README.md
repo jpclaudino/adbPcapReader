@@ -92,8 +92,9 @@ The new compression transmission mechanisms are also not supported yet.
 
 
 ### Contact
+
 * [twitter](https://twitter.com/jpclaudino)
-* [E-mail](jpclaudino@gmail.com)
+* E-mail: jpclaudino@gmail.com
 
 BTC Wallet Address:
 1FsQrD7uN3nXYAyG6jJMwxVNJRUaFQ1j4D
