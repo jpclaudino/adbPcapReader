@@ -91,7 +91,10 @@ Sync services like SND2 e RCV2 have not been implemented.
 The new compression transmission mechanisms are also not supported yet.
 
 
-### Donations
+### Contact
+* [twitter](https://twitter.com/jpclaudino)
+* [E-mail](jpclaudino@gmail.com)
+
 BTC Wallet Address:
 1FsQrD7uN3nXYAyG6jJMwxVNJRUaFQ1j4D
 
