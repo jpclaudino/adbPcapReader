@@ -16,7 +16,7 @@ The script can be used as a forensic tool for analyzing android root softwares.
 The first step consists of capturing USB traffic from interface and save it to a pcap file.
 The capture can be performed by Wireshark or directly with the USBPcap lib.
 
-It is recommended that the buffer be specified, as wireshark limits packet sizes to 65Kb.
+It is recommended that the buffer be specified, as the default packet sizes is 65Kb, but the new USB versions uses larger buffers.
 
 > Ex: C:\Program Files\USBPcap>USBPcapCMD.exe --snaplen 10485760 --bufferlen 10485760 --device \\.\USBPcap1 -A -o usbCapture.pcap
 
@@ -62,6 +62,7 @@ Messages.txt
 
 Sessions.txt
 > *************************** SESSION BEGIN ***************************
+>
 > 1.64 -> host: OPEN (Arg 0: 77, Arg 1: 0, Lenght: 39)
 >
 > Payload: shell:getprop ro.build.version.release
@@ -70,7 +71,10 @@ Sessions.txt
 >
 > *************************** SESSION END ***************************
 >
+>
+>
 > *************************** SESSION BEGIN ***************************
+>
 > 1.56 -> host: OPEN (Arg 0: 88, Arg 5: 0, Lenght: 6)
 >
 > Payload: sync:
@@ -78,4 +82,16 @@ Sessions.txt
 > adb push /data/local/tmp/file ***** File Transmission *****
 >
 >*************************** SESSION END ***************************
+>
+
+## Limitations
+
+Sync services like SND2 e RCV2 have not been implemented.
+
+The new compression transmission mechanisms are also not supported yet.
+
+
+### Donations
+BTC Wallet Address:
+1FsQrD7uN3nXYAyG6jJMwxVNJRUaFQ1j4D
 
