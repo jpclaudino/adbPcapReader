@@ -377,11 +377,13 @@ def readChunks(fileBuffer):
     fileData = b''
     syncRequest = SyncRequest(fileBuffer[0:])
     nextSyncPos = 0
-    while syncRequest.getId() != syncRequests.get("ID_DONE"):
+    while syncRequest.getId() != syncRequests.get("ID_DONE") and syncRequest.getId() != syncRequests.get("ID_FAIL"):
         fileData = fileData + syncRequest.getSyncPayload()
         sizeSyncRequest = syncRequest.getPathLenght()+8
         nextSyncPos = nextSyncPos + sizeSyncRequest
         syncRequest = SyncRequest(fileBuffer[nextSyncPos:])
+    if syncRequest.getId() == syncRequests.get("ID_FAIL"):
+        raise PacketException("File transfer failed.")
     return fileData
 
 def getFileName(path):
@@ -411,9 +413,9 @@ def printSessions(messages):
         os.mkdir(dirPath)
     fullFileName = dirPath + "/" + SESSIONS_FILE
     if os.path.isfile(fullFileName):
-        outFile = open(fullFileName + "_" + str(random.randint(0, 1000)), "w")
+        outFile = open(fullFileName + "_" + str(random.randint(0, 1000)), "w", encoding='utf-8')
     else:
-        outFile = open(fullFileName, "w")
+        outFile = open(fullFileName, "w", encoding='utf-8')
 
     for message in messages:
         packet = message.getPacket()
